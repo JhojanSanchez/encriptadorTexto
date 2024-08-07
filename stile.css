@@ -16,7 +16,8 @@ body{
     box-sizing: border-box;
     margin: 0;
     height: 100vh;
-    background-image: url('Imagenes/BG1.png');
+    background-color:#6098FF;
+    /*background-image: url('Imagenes/BG1.png');*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -236,27 +237,48 @@ main{
     bottom: 0;
     width: 100%;
 }
-/*
-@media (max-width: 1200px ) {
 
-    .header {
-        width:auto;
-        justify-content: center;
-        padding: 6%;
+@media (max-width: 768px )  and (min-width: 420px) {
+
+    *{
+        padding: 0;
+        margin: 0;
     }
 
-
-    .header__menu{
-        justify-content: center;
+    body{
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+        padding-bottom: 3rem;
     }
 
-    .presentacion{
-        flex-direction: column-reverse;
-        padding: 15%;
+    .logo{
+        padding-right: 70%;
     }
 
-    .presentacion__contenido{
-        width:auto;
+    .text-area{
+        padding: 3rem 0;
+        width: 100;
     }
-}*/
 
+    .botones{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .mensaje{
+        width: 100%;
+        display: flex;
+        padding: 2rem 0;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-copiar{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+}
